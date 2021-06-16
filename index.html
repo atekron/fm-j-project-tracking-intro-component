@@ -27,18 +27,26 @@
 
 <body class="flex flex-col justify-between min-h-screen overflow-x-hidden">
   <div class="absolute z-0 w-full h-full bg-brand-light-blue rounded-very-lg -top-2/4 -right-2/4"></div>
-  <div class="max-w-screen-sm relative z-10 font-barlow-condensed text-xl mx-auto my-10">
-    <nav class="flex items-center mx-10 my-8">
+  <div
+    class="relative z-10 max-w-screen-sm lg:max-w-full mx-auto my-10 font-barlow-condensed text-xl flex-1 lg:flex lg:flex-col">
+    <nav class="flex items-center mx-10 my-8 lg:mx-36">
       <div class="mr-auto">
         <img src="./images/logo.svg" alt="logo">
       </div>
       <div
-        class="hidden absolute left-1/2 transform -translate-x-1/2 top-24 w-4/6 py-4 px-12 flex flex-col items-center bg-white rounded-lg shadow-2xl uppercase font-black text-center tracking-wider text-2xl"
+        class="hidden lg:hidden absolute left-1/2 transform -translate-x-1/2 top-24 w-4/6 py-4 px-12 flex flex-col items-center bg-white rounded-lg shadow-2xl uppercase font-black text-center tracking-wider text-2xl"
         id="menu-links">
         <a href="#" class="py-4 hover:underline">Product</a>
         <a href="#" class="py-4 hover:underline">Features</a>
         <a href="#" class="py-4 pb-8 border-b-2 w-full hover:underline">Pricing</a>
-        <a href="#" class="py-4 pt-8 text-brand-grey-blue hover:underline">Login</a>
+        <a href="#" class="py-4 pt-8 text-brand-grey-blue hover:underline hover:opacity-60">Login</a>
+      </div>
+      <div class="hidden lg:flex lg:items-center uppercase font-black text-center tracking-wider text-2xl">
+        <a href="#" class="px-4 hover:underline">Product</a>
+        <a href="#" class="px-4 hover:underline">Features</a>
+        <a href="#" class="px-4 hover:underline">Pricing</a>
+        <div class="h-2 w-2 mx-12 bg-brand-grey-blue rounded-full"></div>
+        <a href="#" class="px-4 text-brand-grey-blue hover:underline hover:opacity-60">Login</a>
       </div>
       <div class="cursor-pointer lg:hidden" id="menu-mobile">
         <img id="menu-hamburger" src="./images/icon-hamburger.svg" alt="menu mobile" class="block w-8 h-auto">
@@ -46,27 +54,34 @@
       </div>
     </nav>
 
-    <div class="overflow-hidden">
-      <img src="./images/illustration-devices.svg" alt="devices" class="block mb-12 object-left-top object-cover h-72">
-    </div>
-
-    <section class="mx-10">
-      <h3 class="flex mt-8 uppercase items-center text-brand-grey-blue tracking-widest">
-        <span class="block px-6 py-1 mr-6 bg-brand-dark-blue font-bold text-white tracking-wide rounded-full">New</span>
-        Monograph Dashboard
-      </h3>
-      <h1 class="mt-8 uppercase text-brand-dark-blue text-5xl font-black">Powerful insights into your team</h1>
-      <p class="mt-8 font-barlow text-brand-dark-grey-blue text-2xl">Project planning and time tracking
-        <br>
-        for agile teams
-      </p>
-      <div class="flex flex-wrap justify-between items-center mt-8">
-        <button
-          class="block py-2 px-4 rounded-md w-2/4 min-w-max uppercase bg-brand-red text-white tracking-wider">Schedule a
-          demo</button>
-        <p class="py-2 uppercase text-brand-grey-blue">to see a live preview</p>
+    <div class="lg:flex lg:flex-row-reverse lg:items-center flex-1">
+      <div>
+        <img src="./images/illustration-devices.svg" alt="devices"
+          class="block mb-12 object-left-top object-cover h-72 lg:h-4/5">
       </div>
-    </section>
+
+      <section class="mx-10 lg:ml-36">
+        <h3 class="flex mt-8 uppercase items-center text-brand-grey-blue tracking-widest">
+          <span
+            class="block px-6 py-1 mr-6 bg-brand-dark-blue font-bold text-white tracking-wide rounded-full">New</span>
+          Monograph Dashboard
+        </h3>
+        <h1 class="mt-8  uppercase text-brand-dark-blue text-5xl lg:text-7xl font-black">Powerful insights <br> into
+          your team
+        </h1>
+        <p class="mt-8 lg:mt-12 font-barlow text-brand-dark-grey-blue text-2xl">Project planning and time tracking
+          <br>
+          for agile teams
+        </p>
+        <div class="flex flex-wrap justify-between lg:justify-start items-center mt-8 lg:mt-12">
+          <button
+            class="block py-2 px-4 lg:p-4 lg:mr-12 rounded-md w-2/4 lg:w-60 min-w-max uppercase bg-brand-red text-white tracking-wider hover:opacity-60">Schedule
+            a
+            demo</button>
+          <p class="py-2 uppercase text-brand-grey-blue lg:tracking-widest">to see a live preview</p>
+        </div>
+      </section>
+    </div>
   </div>
 
   <footer>
