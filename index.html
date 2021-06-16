@@ -32,15 +32,17 @@
       <div class="mr-auto">
         <img src="./images/logo.svg" alt="logo">
       </div>
-      <div class="hidden">
-        <a href="">Product</a>
-        <a href="">Features</a>
-        <a href="">Pricing</a>
-        <a href="">Login</a>
+      <div
+        class="hidden absolute left-1/2 transform -translate-x-1/2 top-24 w-4/6 py-4 px-12 flex flex-col items-center bg-white rounded-lg shadow-2xl uppercase font-black text-center tracking-wider text-2xl"
+        id="menu-links">
+        <a href="#" class="py-4 hover:underline">Product</a>
+        <a href="#" class="py-4 hover:underline">Features</a>
+        <a href="#" class="py-4 pb-8 border-b-2 w-full hover:underline">Pricing</a>
+        <a href="#" class="py-4 pt-8 text-brand-grey-blue hover:underline">Login</a>
       </div>
-      <div class="cursor-pointer">
-        <img src="./images/icon-hamburger.svg" alt="menu mobile" class="block w-8 h-auto">
-        <img src="./images/icon-close.svg" alt="menu close" class="block w-8 h-auto hidden">
+      <div class="cursor-pointer lg:hidden" id="menu-mobile">
+        <img id="menu-hamburger" src="./images/icon-hamburger.svg" alt="menu mobile" class="block w-8 h-auto">
+        <img id="menu-close" src="./images/icon-close.svg" alt="menu close" class="block w-8 h-auto hidden">
       </div>
     </nav>
 
@@ -54,7 +56,9 @@
         Monograph Dashboard
       </h3>
       <h1 class="mt-8 uppercase text-brand-dark-blue text-5xl font-black">Powerful insights into your team</h1>
-      <p class="mt-8 font-barlow text-brand-dark-grey-blue text-2xl">Project planning and time tracking for agile teams
+      <p class="mt-8 font-barlow text-brand-dark-grey-blue text-2xl">Project planning and time tracking
+        <br>
+        for agile teams
       </p>
       <div class="flex flex-wrap justify-between items-center mt-8">
         <button
@@ -68,7 +72,7 @@
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/atekron">Michael Kret</a>.
     </p>
   </footer>
   <script src="./index.js"></script>
